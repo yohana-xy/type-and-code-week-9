@@ -9,6 +9,11 @@
 
 <body>
 
+    <div id="hazel">today's good luck charm</div>
+
+    <div class="button">
+        <button id="hazel">click me</button>
+
     <script>
         const images=[
             "melody.jpg", 
@@ -16,20 +21,27 @@
             "hellokitty.jpg", 
             "cinammoroll.jpg"
         ]; 
+
         let text=document.querySelector('text')
         let roll=Math.random()
+
         function match() {
-            if (Math.random()<0.25) {
-                return "melody.jpg"
-            } if(0.25<=Math.random()<0.5){
-                return "kuromi.jpg"
-            } if(0.5<=Math.random()<0.75){
-                return "hellokitty.jpg"
+            if (roll<0.25) {
+                return {image:"melody.jpg", text:"strawberry cake for u"}
+            } if(0.25<=roll<0.5){
+                return {image:"kuromi.jpg", text:"meet a new bestfriend today"}
+            } if(0.5<=roll<0.75){
+                return {image:"hellokitty.jpg", text:"apple a day keeps the doctor away"}
             } else{
-                return "cinammoroll.jpg"
+                return {image:"cinammoroll.jpg", text:"ur even more sweet than strawberrymilk"}
             }
         }
+
+        hazel.addEventListener('click', match)
+
     </script>
+
+    </div>
     
 </body>
 
