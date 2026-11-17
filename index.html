@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script>
+        const images=[
+            "melody.jpg", 
+            "kuromi.jpg", 
+            "hellokitty.jpg", 
+            "cinammoroll.jpg"
+        ]; 
+        let text=document.querySelector('text')
+        let roll=Math.random()
+        function match() {
+            if (Math.random()<0.25) {
+                return "melody.jpg"
+            } if(0.25<=Math.random()<0.5){
+                return "kuromi.jpg"
+            } if(0.5<=Math.random()<0.75){
+                return "hellokitty.jpg"
+            } else{
+                return "cinammoroll.jpg"
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
